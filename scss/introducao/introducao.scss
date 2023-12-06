@@ -1,7 +1,36 @@
 .slide {
-  padding: 0 6.9375rem 0 6.9375rem;
-  background: url("../../img/bg-red.svg") center center;
-  background-size: cover;
+  width: 100%;
+  padding: 0 auto 0 auto;
+
+  &.blue {
+    background: url("../../img/bg-blue.svg") no-repeat center center;
+    background-size: cover;
+    .ball-blue {
+      display: block;
+      position: absolute;
+      bottom: -650px;
+      right: 12.2%;
+      width: 798px;
+      height: 514px;
+    }
+    .ball-red {
+      display: none;
+    }
+  }
+  &.red {
+    background: url("../../img/bg-red.svg") no-repeat center center;
+    background-size: cover;
+    .ball-red {
+      position: absolute;
+      bottom: -710px;
+      right: 13%;
+      width: 798px;
+      height: 514px;
+    }
+    .ball-blue {
+      display: none;
+    }
+  }
   height: 44.125rem;
   header {
     margin: 0 auto;
@@ -101,15 +130,8 @@
         width: 169.042px;
         height: 57.042px;
         flex-shrink: 0;
-        right: 43.6%;
+        right: 42%;
         bottom: -185px;
-      }
-      .ball {
-        position: absolute;
-        bottom: -710px;
-        right: 21%;
-        width: 798px;
-        height: 514px;
       }
     }
     .circles {

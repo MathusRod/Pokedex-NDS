@@ -1,0 +1,136 @@
+.pokemon {
+  width: $section-width;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+
+  .types {
+    margin-top: 71px;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    div {
+      padding: 5px;
+      img {
+        width: 18px;
+        height: 18px;
+        margin-right: 15px;
+      }
+    }
+  }
+  .pokemon-cards {
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    border-left: 1px solid rgba(0, 0, 0, 0.068);
+    .quantity {
+      margin-left: 75px;
+      margin-top: 70px;
+      display: flex;
+      gap: 6px;
+      margin-bottom: 70px;
+      span {
+        color: $dark-grey-color;
+        font-family: Montserrat;
+        font-size: 18px;
+        font-weight: 600;
+        line-height: 150%;
+      }
+    }
+    .all-cards {
+      margin-left: 75px;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 32px;
+      padding-left: 20px;
+      .card {
+        box-shadow: 0px 10px 51px -5px rgba(183, 189, 193, 0.3);
+        display: flex;
+        flex-direction: column;
+        width: 220px;
+        height: 244px;
+        position: relative;
+        .circle-bg {
+          position: absolute;
+          width: 145px;
+          height: 145px;
+          background: rgb(0, 132, 255);
+          opacity: 0.2;
+          border-radius: 50%;
+          position: absolute;
+          left: 40px;
+          top: 18px;
+        }
+        .pokemon-img {
+          width: 121.038px;
+          height: 119.982px;
+          position: absolute;
+          left: 55px;
+          top: 30px;
+        }
+        .info {
+          margin: 80% 28px 0 28px;
+          display: flex;
+          justify-content: space-between;
+          .text {
+            display: flex;
+            flex-direction: column;
+            gap: 6px;
+            span {
+              color: $black-color;
+              opacity: 0.5;
+              font-size: 13px;
+              font-weight: 500;
+              line-height: 150%;
+            }
+            h4 {
+              color: $black-color;
+              font-family: Montserrat;
+              font-size: 18px;
+              font-weight: 600;
+              line-height: 150%;
+            }
+          }
+          img {
+            margin-top: 19px;
+            width: 28px;
+            height: 28px;
+          }
+        }
+      }
+    }
+    .more {
+      margin-top: 69px;
+      margin-left: 53px;
+      margin-bottom: 88px;
+      width: 190px;
+      align-self: center;
+      border-radius: 6px;
+      background: rgba(63, 93, 179, 0.1);
+      padding: 20px;
+      cursor: pointer;
+      &:hover {
+        animation: transition .3s linear forwards;
+        p{
+          color: #fff;
+        }
+      }
+      p {
+        color: #3f5db3;
+        font-family: Montserrat;
+        font-size: 14px;
+        font-weight: 600;
+        letter-spacing: -0.14px;
+      }
+    }
+  }
+}
+
+@keyframes transition{
+  from{
+    background: rgba(63, 93, 179, 0.1);
+  }
+  to{
+    background: #3f5db3;
+  }
+}

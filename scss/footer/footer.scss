@@ -1,0 +1,29 @@
+footer {
+  background: #3f5db3;
+  .footer-container {
+    display: flex;
+    justify-content: space-between;
+    width: $section-width;
+    margin: 0 auto;
+    .text {
+      margin: 67px 0 90px 0;
+      h4 {
+        color: #fff;
+        font-size: 18px;
+        font-weight: 700;
+        line-height: 180%;
+      }
+      span {
+        color: #fff;
+        font-size: 14px;
+        font-weight: 500;
+        line-height: 180%;
+      }
+    }
+    img {
+      margin-top: 83px;
+      width: 171.416px;
+      height: 24px;
+    }
+  }
+}
