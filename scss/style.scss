@@ -1,13 +1,8 @@
-*{
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  font-family: "Inter", sans-serif;
-}
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Montserrat:wght@300;400;500;600;700&display=swap');
-@import "./variables/colors.scss";
-@import "./variables/size.scss";
-@import "./introducao/introducao.scss";
-@import "./search/search.scss";
-@import "./pokemon/pokemon.scss";
-@import "./footer/footer.scss";
+@import "./variables";
+@import "./reset";
+@import "./container";
+@import "./mixins";
+@import "./components";
+@import "./tittles";
+@import "./header";
+@import "./home";

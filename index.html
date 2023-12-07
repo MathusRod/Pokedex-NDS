@@ -2,6 +2,9 @@
 <html lang="en">
 
 <head>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="./css/style.css">
@@ -9,220 +12,52 @@
 </head>
 
 <body>
-  <main class="container">
-    <section class="slide blue">
-      <header>
-        <img class="logo" src="./img/logo.svg" alt="">
-        <p>Case Study -> Code<strong>Boost</strong></p>
-      </header>
-      <div class="content">
-        <div class="bag">
-          <div>
-            <img src="./img/bag-red.svg" alt="">
-          </div>
-          <p>pokedex</p>
-        </div>
-        <div class="text">
-          <h1>Who is that Pokémon?</h1>
-          <p>The perfect guide for those who want to hunt Pokémon around the world</p>
-        </div>
-        <section class="BigPokeball">
-          <div class="explore">
-            <p>explore</p>
-            <button><img src="./img/arrow-down-white.svg" alt=""></button>
-          </div>
-          <img class="stars" src="./img/lighting.svg" alt="">
-          <img class="ball-red" src="./img/pokeball-red.png" alt="">
-          <img src="" alt="">
-          <img class="ball-blue" src="./img/pokeball-blue.png" alt="">
-          <div class="circles">
-            <div class="circle active"></div>
-            <div class="circle"></div>
-          </div>
-      </div>
-    </section>
+
+  <h1>Qual é esse Pokémon?</h1>
+
+  <h2>Selecione seu Pokémon</h2>
+
+  <h3>Froakie</h3>
+
+  <div class="tag blue-tag">
+    <div class="icon">
+      <img src="./img/bag-red.svg" alt="">
     </div>
-    </section>
-    <section class="search">
-      <div class="content">
-        <h2>Select your Pokémon</h2>
-        <label for="search">
-          <input type="text" id="search" placeholder="Search name or Code">
-          <button>
-            <img src="./img/icon-search.svg" alt="">
-          </button>
-        </label>
+    <span>pokedex</span>
+  </div>
+
+  <div class="search">
+    <input type="text" placeholder="Busque pelo nome ou ID">
+    <button type="button">
+      <img src="./img/icon-search.svg" alt="">
+    </button>
+  </div>
+
+  <div class="type-filter grass">
+    <div class="icon">
+      <img src="./img/icon-types/grass.svg" alt="">
+    </div>
+    <span>Grass</span>
+  </div>
+
+  <div class="card-pokemon grass">
+    <div class="image">
+      <img src="./img/Bulbasaur.svg" alt="">
+    </div>
+    <div class="info">
+      <div class="text">
+        <span>#001</span>
+        <h3>Bulbasaur</h3>
       </div>
-    </section>
-    <section class="pokemon">
-      <div class="types">
-        <div>
-          <img src="./img/icon-all.svg" alt="">
-          <span>All</span>
-        </div>
-        <div>
-          <img src="./img/icon-types/ghost.svg" alt="">
-          <span>Ghost</span>
-        </div>
-        <div>
-          <img src="./img/icon-types/rock.svg" alt="">
-          <span>Rock</span>
-        </div>
-        <div>
-          <img src="./img/icon-types/grass.svg" alt="">
-          <span>Grass</span>
-        </div>
-        <div>
-          <img src="./img/icon-types/dragon.svg" alt="">
-          <span>Dragon</span>
-        </div>
-        <div>
-          <img src="./img/icon-types/steel.svg" alt="">
-          <span>Steel</span>
-        </div>
-        <div>
-          <img src="./img/icon-types/electric.svg" alt="">
-          <span>Electric</span>
-        </div>
-        <div>
-          <img src="./img/icon-types/water.svg" alt="">
-          <span>Water</span>
-        </div>
-        <div>
-          <img src="./img/icon-types/fire.svg" alt="">
-          <span>Fire</span>
-        </div>
-        <div>
-          <img src="./img/icon-types/bug.svg" alt="">
-          <span>Bug</span>
-        </div>
-        <div>
-          <img src="./img/icon-types/flying.svg" alt="">
-          <span>Flying</span>
-        </div>
+      <div class="icon">
+        <img src="./img/icon-types/grass.svg" alt="">
       </div>
-      <div class="pokemon-cards">
-        <div class="quantity">
-          <img src="./img/icon-pokeball.svg" alt="">
-          <span>150 Pokémon</span>
-        </div>
-        <div class="all-cards">
-          <div class="card">
-            <div class="circle-bg"></div>
-            <img src="./img/froakie.png" alt="" class="pokemon-img">
-            <div class="info">
-              <div class="text">
-                <span>#656</span>
-                <h4>Froakie</h4>
-              </div>
-              <img src="./img/icon-types/water.svg" alt="">
-            </div>
-          </div>
-          <div class="card">
-            <div class="circle-bg"></div>
-            <img src="./img/froakie.png" alt="" class="pokemon-img">
-            <div class="info">
-              <div class="text">
-                <span>#656</span>
-                <h4>Froakie</h4>
-              </div>
-              <img src="./img/icon-types/water.svg" alt="">
-            </div>
-          </div>
-          <div class="card">
-            <div class="circle-bg"></div>
-            <img src="./img/froakie.png" alt="" class="pokemon-img">
-            <div class="info">
-              <div class="text">
-                <span>#656</span>
-                <h4>Froakie</h4>
-              </div>
-              <img src="./img/icon-types/water.svg" alt="">
-            </div>
-          </div>
-          <div class="card">
-            <div class="circle-bg"></div>
-            <img src="./img/froakie.png" alt="" class="pokemon-img">
-            <div class="info">
-              <div class="text">
-                <span>#656</span>
-                <h4>Froakie</h4>
-              </div>
-              <img src="./img/icon-types/water.svg" alt="">
-            </div>
-          </div>
-          <div class="card">
-            <div class="circle-bg"></div>
-            <img src="./img/froakie.png" alt="" class="pokemon-img">
-            <div class="info">
-              <div class="text">
-                <span>#656</span>
-                <h4>Froakie</h4>
-              </div>
-              <img src="./img/icon-types/water.svg" alt="">
-            </div>
-          </div>
-          <div class="card">
-            <div class="circle-bg"></div>
-            <img src="./img/froakie.png" alt="" class="pokemon-img">
-            <div class="info">
-              <div class="text">
-                <span>#656</span>
-                <h4>Froakie</h4>
-              </div>
-              <img src="./img/icon-types/water.svg" alt="">
-            </div>
-          </div>
-          <div class="card">
-            <div class="circle-bg"></div>
-            <img src="./img/froakie.png" alt="" class="pokemon-img">
-            <div class="info">
-              <div class="text">
-                <span>#656</span>
-                <h4>Froakie</h4>
-              </div>
-              <img src="./img/icon-types/water.svg" alt="">
-            </div>
-          </div>
-          <div class="card">
-            <div class="circle-bg"></div>
-            <img src="./img/froakie.png" alt="" class="pokemon-img">
-            <div class="info">
-              <div class="text">
-                <span>#656</span>
-                <h4>Froakie</h4>
-              </div>
-              <img src="./img/icon-types/water.svg" alt="">
-            </div>
-          </div>
-          <div class="card">
-            <div class="circle-bg"></div>
-            <img src="./img/froakie.png" alt="" class="pokemon-img">
-            <div class="info">
-              <div class="text">
-                <span>#656</span>
-                <h4>Froakie</h4>
-              </div>
-              <img src="./img/icon-types/water.svg" alt="">
-            </div>
-          </div>
-        </div>
-        <div class="more">
-          <p>Load more Pokémon</p>
-        </div>
-      </div>
-    </section>
-    <footer>
-      <div class="footer-container">
-        <div class="text">
-          <h4>Módulo JavaScript</h4>
-          <span>Consumindo e exibindo dados de uma API</span>
-        </div>
-        <img src="./img/codeboost.svg" alt="">
-      </div>
-    </footer>
-  </main>
-  <script src="./js/index.js"></script>
+    </div>
+  </div>
+
+  <span class="tag-type grass">Grass</span>
+
+  <script type="module" src="./js/index.js"></script>
 </body>
 
 </html>

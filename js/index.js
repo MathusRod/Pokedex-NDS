@@ -1,0 +1,1 @@
+import {slide_hero} from "./modules/swiper.js"
