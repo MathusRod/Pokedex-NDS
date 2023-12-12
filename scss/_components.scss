@@ -326,7 +326,7 @@
     height: 200px;
     @include centerTotalFlex;
     margin: 0 auto;
-    margin-bottom: 1.4rem;
+    margin-bottom: 0.3rem;
     &:after {
       content: "";
       width: 16.5rem;
@@ -495,7 +495,9 @@
   height: 100%;
   @include centerTotalFlex;
   z-index: 666;
-
+  opacity: 0;
+  pointer-events: none;
+  transition: all .3s;
   .overlay {
     position: fixed;
     top: 0;
@@ -515,6 +517,8 @@
     background-color: #fff;
     box-shadow: 0 10px 14px rgba(13, 12, 71, 0.05);
     border-radius: 16px;
+    transform: translateY(4rem);
+    transition: transform .3s ease-in;
     .close {
       position: absolute;
       top: -4.4rem;
@@ -654,10 +658,11 @@
               width: 100%;
               max-width: 30.3rem;
               height: 3px;
-              background-color: #eff3f6;
+              /*background-color: #eff3f6;*/
+              background-color: black;
               .bar{
                 position: absolute;
-                width: 56%;
+                width: 89%;
                 height: 100%;
                 top: 0;
                 left: 0;
@@ -665,7 +670,19 @@
                 background-color: #c20001;
               }
               .separator{
-
+                position: absolute;
+                top: 0;
+                left: 0;
+                display: flex;
+                width: 100%;
+                li{
+                  width: 4px;
+                  height: 3px;
+                  background-color: #fff;
+                  &:not(:first-child){
+                    margin-left: 5.4rem;
+                  }
+                }
               }
             }
           }
@@ -761,6 +778,16 @@
   &[type-pokemon-modal="fighting"] {
     .left-container {
       background-image: url("../img/bg-types/fighting.svg");
+    }
+  }
+}
+
+.open-modal{
+  .modal{
+    opacity: 1;
+    pointer-events:all;
+    .box{
+      transform: translateY(0);
     }
   }
 }

@@ -1,1 +1,746 @@
-*{margin:0;padding:0;box-sizing:border-box;font-family:"Inter",sans-serif}html{font-size:62.5%}body{background-color:gray}button{cursor:pointer;border:0;background-color:rgba(0,0,0,0)}button[disabled]{cursor:not-allowed}img{display:block;max-width:100%}a{text-decoration:none;display:block}ul{list-style:none}.tag{display:flex;align-items:center;background-color:#fff;border-radius:15.25rem;max-width:12.1rem;padding:.375rem .25rem}.tag.blue-tag .icon{background-color:rgba(63,104,186,.15)}.tag.blue-tag span{color:#3f67ba}.tag .icon{width:1.625rem;height:1.625rem;background:rgba(194,0,0,.12);border-radius:50%;display:flex;align-items:center;justify-content:center;margin-right:.5rem}.tag span{font-weight:600;font-size:1.5rem;line-height:150%;color:#c20001}.search{background-color:#fff;border-radius:7.625rem;height:5.6rem;width:100%;max-width:40.3rem;display:flex;align-items:center;justify-content:space-between;padding-left:2.5rem;padding-right:.7rem}.search input[type=text]{border:0;width:80%;outline:none;font-size:1.5rem;line-height:150%;color:#a0afba}.search input[type=text]::placeholder{color:#a0afba}.search button{width:2.625rem;height:2.625rem;background-color:rgba(158,185,225,.1);border-radius:50%;border:1px solid rgba(0,0,0,0);transition:border-color .3s;display:flex;align-items:center;justify-content:center}.search button:hover{border-color:#3e75c3}.type-filter{display:flex;align-items:center;filter:grayscale(100%);opacity:.5}.type-filter:hover{transition:all .3s;filter:grayscale(0%);opacity:1}.type-filter .icon{width:2.8rem;height:2.8rem;display:flex;align-items:center;justify-content:center;margin-right:.5rem}.type-filter span{font-size:500;font-size:1.5rem;line-height:150%}.type-filter.water span{color:#4f77be}.type-filter.grass span{color:#73b861}.type-filter.fire span{color:#e96303}.type-filter.electric span{color:#d4bc34}.type-filter.ghost span{color:#616eb7}.type-filter.dragon span{color:#2c6ac1}.type-filter.ice span{color:#71baac}.type-filter.rock span{color:#84beb3}.type-filter.steel span{color:#6594a1}.type-filter.psychic span{color:#eb8b85}.type-filter.normal span{color:#909090}.type-filter.poison span{color:#ac6aca}.type-filter.ground span{color:#ce8056}.type-filter.flying span{color:#758cbd}.type-filter.fairy span{color:#e296e1}.type-filter.bug span{color:#9bba48}.type-filter.dark span{color:#595761}.type-filter.fighting span{color:#c44d61}.card-pokemon{cursor:pointer;position:relative;z-index:1;width:100%;max-width:25rem;height:25.4rem;border-radius:12px;background:#f3f0f0;box-shadow:0px 10px 51px -5px rgba(183,189,193,.5);transition:all .3s}.card-pokemon:hover{transform:scale(1.07);box-shadow:0px 12px 40px -5px rgba(90,96,100,.3)}.card-pokemon.grass .image:after{background-color:rgba(114,184,97,.3)}.card-pokemon.bug .image:after{background-color:rgba(155,186,72,.3)}.card-pokemon.dark .image:after{background-color:rgba(89,87,97,.3)}.card-pokemon.dragon .image:after{background-color:rgba(44,106,193,.3)}.card-pokemon.electric .image:after{background-color:rgba(212,188,52,.3)}.card-pokemon.fairy .image:after{background-color:rgba(226,150,225,.3)}.card-pokemon.fighting .image:after{background-color:rgba(196,77,97,.3)}.card-pokemon.ground .image:after{background-color:rgba(206,128,86,.3)}.card-pokemon.ice .image:after{background-color:rgba(113,186,172,.3)}.card-pokemon.normal .image:after{background-color:rgba(144,144,144,.3)}.card-pokemon.poison .image:after{background-color:rgba(172,106,202,.3)}.card-pokemon.psychic .image:after{background-color:rgba(235,139,133,.3)}.card-pokemon.rock .image:after{background-color:rgba(132,190,179,.3)}.card-pokemon.ghost .image:after{background-color:rgba(97,110,183,.3)}.card-pokemon.steal .image:after{background-color:rgba(101,148,161,.3)}.card-pokemon.water .image:after{background-color:rgba(79,119,190,.3)}.card-pokemon.fire .image:after{background-color:rgba(233,99,3,.3)}.card-pokemon.flying .image:after{background-color:rgba(117,140,189,.3)}.card-pokemon .image{position:relative;width:200px;height:200px;display:flex;align-items:center;justify-content:center;margin:0 auto;margin-bottom:1.4rem}.card-pokemon .image:after{content:"";width:16.5rem;height:16.5rem;position:absolute;z-index:-1;border-radius:50%}.card-pokemon .info{width:100%;display:flex;justify-content:space-between;align-items:flex-end;padding:0 2.8rem}.card-pokemon .info .text span{text-align:left;display:block;margin-bottom:6px;font-weight:500;font-size:1.3rem;line-height:150%;color:#7a7d80}.card-pokemon .info .icon{margin-bottom:1rem}.tag-type{display:inline-block;padding:0 25px;line-height:2.4rem}.tag-type.water{color:#4f77be;background-color:rgba(79,120,190,.3)}.tag-type.grass{color:#73b861;background-color:rgba(114,184,97,.3)}.tag-type.fire{color:#e96303;background-color:rgba(233,99,3,.3)}.tag-type.electric{color:#d4bc34;background-color:rgba(212,188,52,.3)}.tag-type.ghost{color:#616eb7;background-color:rgba(97,110,183,.3)}.tag-type.dragon{color:#2c6ac1;background-color:rgba(43,105,191,.3)}.tag-type.ice{color:#71baac;background-color:rgba(113,186,171,.3)}.tag-type.rock{color:#84beb3;background-color:rgba(132,190,179,.3)}.tag-type.steel{color:#6594a1;background-color:rgba(101,148,161,.3)}.tag-type.psychic{color:#eb8b85;background-color:rgba(235,140,133,.3)}.tag-type.normal{color:#909090;background-color:rgba(144,144,144,.3)}.tag-type.poison{color:#ac6aca;background-color:rgba(172,106,202,.3)}.tag-type.ground{color:#ce8056;background-color:rgba(206,128,86,.3)}.tag-type.flying{color:#758cbd;background-color:rgba(117,140,189,.3)}.tag-type.fairy{color:#e296e1;background-color:rgba(226,150,225,.3)}.tag-type.bug{color:#9bba48;background-color:rgba(156,186,72,.3)}.tag-type.dark{color:#595761;background-color:rgba(89,87,97,.3)}.tag-type.fighting{color:#c44d61;background-color:rgba(196,77,97,.3)}.load-more{font-family:"Montserrat",sans-serif;font-size:1.4rem;font-weight:600;letter-spacing:-0.01rem;display:inline-block;padding:14px 20px;color:#3f5db3;background-color:rgba(63,93,179,.1);border-radius:6px}.load-more:hover{animation:load-hover .3s linear forwards;transform:scale(1.07);transition:all .5s}@keyframes load-hover{from{background-color:rgba(63,93,179,.1);color:#3f5db3}to{background-color:#3f5db3;color:#fff}}.footer{background-color:#3f5db3}.footer .footer-conteiner{width:1080px;margin:0 auto;display:flex;justify-content:space-between}.footer .footer-conteiner .text{color:#fff;line-height:180%;margin:6.7rem 11.2rem 6.5rem 0}.footer .footer-conteiner .text p{font-size:18px;font-weight:700}.footer .footer-conteiner .text span{font-size:14px;font-weight:500}.modal{position:fixed;top:0;left:0;width:100%;height:100%;display:flex;align-items:center;justify-content:center;z-index:666}.modal .overlay{position:fixed;top:0;left:0;width:100%;height:100%;z-index:0;background-color:rgba(0,0,0,.5)}.modal .box{display:flex;position:relative;z-index:1;width:100%;max-width:71rem;height:50.8rem;background-color:#fff;box-shadow:0 10px 14px rgba(13,12,71,.05);border-radius:16px}.modal .box .close{position:absolute;top:-4.4rem;right:0;width:3.6rem;height:3.6rem;background:#fff;border-radius:8px;display:flex;align-items:center;justify-content:center}.modal .box .left-container{position:relative;width:100%;height:100%;max-width:19.1rem;background-repeat:no-repeat;background-position:center center;background-size:cover}.modal .box .left-container .icon{position:absolute;top:2rem;right:2rem;width:3.4rem;height:3.4rem;background-color:#fff;border-radius:50%;display:flex;align-items:center;justify-content:center}.modal .box .left-container .image{position:absolute;left:1.8rem;bottom:16.1rem;width:19rem}.modal .box .left-container .image img{width:100%}.modal .box .right-container{padding:3.5rem 4.5rem 2.9rem 7.4rem;width:100%}.modal .box .right-container .name{display:flex;align-items:flex-end;margin-bottom:8px}.modal .box .right-container .name h2{color:#2f3133;font-family:"Montserrat",sans-serif;font-size:2.8rem;font-weight:700;letter-spacing:-0.28px;margin-right:8px}.modal .box .right-container .name span{color:#7a7d80;font-family:"Montserrat",sans-serif;font-size:1.6rem;font-weight:400;letter-spacing:-0.16px;margin-bottom:9px}.modal .box .right-container .type{display:flex;gap:10px;margin-bottom:3.2rem;align-items:center;flex-wrap:wrap;width:100%}.modal .box .right-container .info{display:flex;gap:4.8rem;margin-bottom:3.2rem}.modal .box .right-container .info li{display:flex;flex-direction:column;gap:4px}.modal .box .right-container .info li span{color:#7a7d80;font-size:1.3rem;font-weight:400;letter-spacing:-0.13px}.modal .box .right-container .info li strong{color:#2f3133;font-family:"Montserrat",sans-serif;font-size:1.4rem;font-weight:600;letter-spacing:-0.14px}.modal .box .right-container .weak{margin-bottom:3.2rem}.modal .box .right-container .weak h4{color:#4d5053;font-size:1.3rem;font-weight:600;letter-spacing:-0.13px;margin-bottom:1.6rem}.modal .box .right-container .weak .weak-types{display:flex;flex-wrap:wrap;width:100%;gap:1rem}.modal .box .right-container .stats h5{color:#4d5053;font-size:1.3rem;font-weight:600;letter-spacing:-0.13px;margin-bottom:1.6rem}.modal .box .right-container .stats .all .item{display:flex;align-items:center;justify-content:space-between;gap:2rem}.modal .box .right-container .stats .all .item:not(:last-child){margin-bottom:1.3rem}.modal .box .right-container .stats .all .item span{color:#7a7d80;font-size:1.2rem;line-height:1.5rem;font-weight:400;display:block;width:80px}.modal .box .right-container .stats .all .item .bar-status{position:relative;width:100%;max-width:30.3rem;height:3px;background-color:#eff3f6}.modal .box .right-container .stats .all .item .bar-status .bar{position:absolute;width:56%;height:100%;top:0;left:0;z-index:0;background-color:#c20001}.modal[type-pokemon-modal=grass] .left-container{background-image:url("../img/bg-types/grass.svg")}.modal[type-pokemon-modal=bug] .left-container{background-image:url("../img/bg-types/bug.svg")}.modal[type-pokemon-modal=water] .left-container{background-image:url("../img/bg-types/water.svg")}.modal[type-pokemon-modal=fire] .left-container{background-image:url("../img/bg-types/fire.svg")}.modal[type-pokemon-modal=electric] .left-container{background-image:url("../img/bg-types/electric.svg")}.modal[type-pokemon-modal=ghost] .left-container{background-image:url("../img/bg-types/ghost.svg")}.modal[type-pokemon-modal=dragon] .left-container{background-image:url("../img/bg-types/dragon.svg")}.modal[type-pokemon-modal=ice] .left-container{background-image:url("../img/bg-types/ice.svg")}.modal[type-pokemon-modal=rock] .left-container{background-image:url("../img/bg-types/rock.svg")}.modal[type-pokemon-modal=steel] .left-container{background-image:url("../img/bg-types/steel.svg")}.modal[type-pokemon-modal=psychic] .left-container{background-image:url("../img/bg-types/psychic.svg")}.modal[type-pokemon-modal=normal] .left-container{background-image:url("../img/bg-types/normal.svg")}.modal[type-pokemon-modal=poison] .left-container{background-image:url("../img/bg-types/poison.svg")}.modal[type-pokemon-modal=ground] .left-container{background-image:url("../img/bg-types/ground.svg")}.modal[type-pokemon-modal=flying] .left-container{background-image:url("../img/bg-types/flying.svg")}.modal[type-pokemon-modal=flaire] .left-container{background-image:url("../img/bg-types/flaire.svg")}.modal[type-pokemon-modal=dark] .left-container{background-image:url("../img/bg-types/dark.svg")}.modal[type-pokemon-modal=fighting] .left-container{background-image:url("../img/bg-types/fighting.svg")}h1,h2,h3{font-family:"Montserrat",sans-serif;line-height:150%}h1,h2{font-weight:700;letter-spacing:-0.01rem}h2,h3{color:#2f3133}h1{font-size:6.4rem;color:#fff}h2{font-size:3.2rem}h3{font-weight:600;font-size:1.8rem}/*# sourceMappingURL=style.css.map */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Inter", sans-serif;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  background-color: grey;
+}
+
+button {
+  cursor: pointer;
+  border: 0;
+  background-color: transparent;
+}
+button[disabled] {
+  cursor: not-allowed;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+a {
+  text-decoration: none;
+  display: block;
+}
+
+ul {
+  list-style: none;
+}
+
+.tag {
+  display: flex;
+  align-items: center;
+  background-color: #fff;
+  border-radius: 15.25rem;
+  max-width: 12.1rem;
+  padding: 0.375rem 0.25rem;
+}
+.tag.blue-tag .icon {
+  background-color: rgba(63, 104, 186, 0.15);
+}
+.tag.blue-tag span {
+  color: #3f67ba;
+}
+.tag .icon {
+  width: 1.625rem;
+  height: 1.625rem;
+  background: rgba(194, 0, 0, 0.12);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 0.5rem;
+}
+.tag span {
+  font-weight: 600;
+  font-size: 1.5rem;
+  line-height: 150%;
+  color: #c20001;
+}
+
+.search {
+  background-color: #fff;
+  border-radius: 7.625rem;
+  height: 5.6rem;
+  width: 100%;
+  max-width: 40.3rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-left: 2.5rem;
+  padding-right: 0.7rem;
+}
+.search input[type=text] {
+  border: 0;
+  width: 80%;
+  outline: none;
+  font-size: 1.5rem;
+  line-height: 150%;
+  color: #a0afba;
+}
+.search input[type=text]::placeholder {
+  color: #a0afba;
+}
+.search button {
+  width: 2.625rem;
+  height: 2.625rem;
+  background-color: rgba(158, 185, 225, 0.1);
+  border-radius: 50%;
+  border: 1px solid transparent;
+  transition: border-color 0.3s;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.search button:hover {
+  border-color: #3e75c3;
+}
+
+.type-filter {
+  display: flex;
+  align-items: center;
+  filter: grayscale(100%);
+  opacity: 0.5;
+}
+.type-filter:hover {
+  transition: all 0.3s;
+  filter: grayscale(0%);
+  opacity: 1;
+}
+.type-filter .icon {
+  width: 2.8rem;
+  height: 2.8rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 0.5rem;
+}
+.type-filter span {
+  font-size: 500;
+  font-size: 1.5rem;
+  line-height: 150%;
+}
+.type-filter.water span {
+  color: #4f77be;
+}
+.type-filter.grass span {
+  color: #73b861;
+}
+.type-filter.fire span {
+  color: #e96303;
+}
+.type-filter.electric span {
+  color: #d4bc34;
+}
+.type-filter.ghost span {
+  color: #616eb7;
+}
+.type-filter.dragon span {
+  color: #2c6ac1;
+}
+.type-filter.ice span {
+  color: #71baac;
+}
+.type-filter.rock span {
+  color: #84beb3;
+}
+.type-filter.steel span {
+  color: #6594a1;
+}
+.type-filter.psychic span {
+  color: #eb8b85;
+}
+.type-filter.normal span {
+  color: #909090;
+}
+.type-filter.poison span {
+  color: #ac6aca;
+}
+.type-filter.ground span {
+  color: #ce8056;
+}
+.type-filter.flying span {
+  color: #758cbd;
+}
+.type-filter.fairy span {
+  color: #e296e1;
+}
+.type-filter.bug span {
+  color: #9bba48;
+}
+.type-filter.dark span {
+  color: #595761;
+}
+.type-filter.fighting span {
+  color: #c44d61;
+}
+
+.card-pokemon {
+  cursor: pointer;
+  position: relative;
+  z-index: 1;
+  width: 100%;
+  max-width: 25rem;
+  height: 25.4rem;
+  border-radius: 12px;
+  background: #f3f0f0;
+  box-shadow: 0px 10px 51px -5px rgba(183, 189, 193, 0.5);
+  transition: all 0.3s;
+}
+.card-pokemon:hover {
+  transform: scale(1.07);
+  box-shadow: 0px 12px 40px -5px rgba(90, 96, 100, 0.3);
+}
+.card-pokemon.grass .image:after {
+  background-color: rgba(114, 184, 97, 0.3);
+}
+.card-pokemon.bug .image:after {
+  background-color: rgba(155, 186, 72, 0.3);
+}
+.card-pokemon.dark .image:after {
+  background-color: rgba(89, 87, 97, 0.3);
+}
+.card-pokemon.dragon .image:after {
+  background-color: rgba(44, 106, 193, 0.3);
+}
+.card-pokemon.electric .image:after {
+  background-color: rgba(212, 188, 52, 0.3);
+}
+.card-pokemon.fairy .image:after {
+  background-color: rgba(226, 150, 225, 0.3);
+}
+.card-pokemon.fighting .image:after {
+  background-color: rgba(196, 77, 97, 0.3);
+}
+.card-pokemon.ground .image:after {
+  background-color: rgba(206, 128, 86, 0.3);
+}
+.card-pokemon.ice .image:after {
+  background-color: rgba(113, 186, 172, 0.3);
+}
+.card-pokemon.normal .image:after {
+  background-color: rgba(144, 144, 144, 0.3);
+}
+.card-pokemon.poison .image:after {
+  background-color: rgba(172, 106, 202, 0.3);
+}
+.card-pokemon.psychic .image:after {
+  background-color: rgba(235, 139, 133, 0.3);
+}
+.card-pokemon.rock .image:after {
+  background-color: rgba(132, 190, 179, 0.3);
+}
+.card-pokemon.ghost .image:after {
+  background-color: rgba(97, 110, 183, 0.3);
+}
+.card-pokemon.steal .image:after {
+  background-color: rgba(101, 148, 161, 0.3);
+}
+.card-pokemon.water .image:after {
+  background-color: rgba(79, 119, 190, 0.3);
+}
+.card-pokemon.fire .image:after {
+  background-color: rgba(233, 99, 3, 0.3);
+}
+.card-pokemon.flying .image:after {
+  background-color: rgba(117, 140, 189, 0.3);
+}
+.card-pokemon .image {
+  position: relative;
+  width: 200px;
+  height: 200px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
+  margin-bottom: 0.3rem;
+}
+.card-pokemon .image:after {
+  content: "";
+  width: 16.5rem;
+  height: 16.5rem;
+  position: absolute;
+  z-index: -1;
+  border-radius: 50%;
+}
+.card-pokemon .info {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  padding: 0 2.8rem;
+}
+.card-pokemon .info .text span {
+  text-align: left;
+  display: block;
+  margin-bottom: 6px;
+  font-weight: 500;
+  font-size: 1.3rem;
+  line-height: 150%;
+  color: #7a7d80;
+}
+.card-pokemon .info .icon {
+  margin-bottom: 1rem;
+}
+
+.tag-type {
+  display: inline-block;
+  padding: 0 25px;
+  line-height: 2.4rem;
+}
+.tag-type.water {
+  color: #4f77be;
+  background-color: rgba(79, 120, 190, 0.3);
+}
+.tag-type.grass {
+  color: #73b861;
+  background-color: rgba(114, 184, 97, 0.3);
+}
+.tag-type.fire {
+  color: #e96303;
+  background-color: rgba(233, 99, 3, 0.3);
+}
+.tag-type.electric {
+  color: #d4bc34;
+  background-color: rgba(212, 188, 52, 0.3);
+}
+.tag-type.ghost {
+  color: #616eb7;
+  background-color: rgba(97, 110, 183, 0.3);
+}
+.tag-type.dragon {
+  color: #2c6ac1;
+  background-color: rgba(43, 105, 191, 0.3);
+}
+.tag-type.ice {
+  color: #71baac;
+  background-color: rgba(113, 186, 171, 0.3);
+}
+.tag-type.rock {
+  color: #84beb3;
+  background-color: rgba(132, 190, 179, 0.3);
+}
+.tag-type.steel {
+  color: #6594a1;
+  background-color: rgba(101, 148, 161, 0.3);
+}
+.tag-type.psychic {
+  color: #eb8b85;
+  background-color: rgba(235, 140, 133, 0.3);
+}
+.tag-type.normal {
+  color: #909090;
+  background-color: rgba(144, 144, 144, 0.3);
+}
+.tag-type.poison {
+  color: #ac6aca;
+  background-color: rgba(172, 106, 202, 0.3);
+}
+.tag-type.ground {
+  color: #ce8056;
+  background-color: rgba(206, 128, 86, 0.3);
+}
+.tag-type.flying {
+  color: #758cbd;
+  background-color: rgba(117, 140, 189, 0.3);
+}
+.tag-type.fairy {
+  color: #e296e1;
+  background-color: rgba(226, 150, 225, 0.3);
+}
+.tag-type.bug {
+  color: #9bba48;
+  background-color: rgba(156, 186, 72, 0.3);
+}
+.tag-type.dark {
+  color: #595761;
+  background-color: rgba(89, 87, 97, 0.3);
+}
+.tag-type.fighting {
+  color: #c44d61;
+  background-color: rgba(196, 77, 97, 0.3);
+}
+
+.load-more {
+  font-family: "Montserrat", sans-serif;
+  font-size: 1.4rem;
+  font-weight: 600;
+  letter-spacing: -0.01rem;
+  display: inline-block;
+  padding: 14px 20px;
+  color: #3f5db3;
+  background-color: rgba(63, 93, 179, 0.1);
+  border-radius: 6px;
+}
+.load-more:hover {
+  animation: load-hover 0.3s linear forwards;
+  transform: scale(1.07);
+  transition: all 0.5s;
+}
+
+@keyframes load-hover {
+  from {
+    background-color: rgba(63, 93, 179, 0.1);
+    color: rgb(63, 93, 179);
+  }
+  to {
+    background-color: rgb(63, 93, 179);
+    color: #fff;
+  }
+}
+.footer {
+  background-color: rgb(63, 93, 179);
+}
+.footer .footer-conteiner {
+  width: 1080px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+}
+.footer .footer-conteiner .text {
+  color: #fff;
+  line-height: 180%;
+  margin: 6.7rem 11.2rem 6.5rem 0;
+}
+.footer .footer-conteiner .text p {
+  font-size: 18px;
+  font-weight: 700;
+}
+.footer .footer-conteiner .text span {
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 666;
+  opacity: 0;
+  pointer-events: none;
+  transition: all 0.3s;
+}
+.modal .overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+.modal .box {
+  display: flex;
+  position: relative;
+  z-index: 1;
+  width: 100%;
+  max-width: 71rem;
+  height: 50.8rem;
+  background-color: #fff;
+  box-shadow: 0 10px 14px rgba(13, 12, 71, 0.05);
+  border-radius: 16px;
+  transform: translateY(4rem);
+  transition: transform 0.3s ease-in;
+}
+.modal .box .close {
+  position: absolute;
+  top: -4.4rem;
+  right: 0;
+  width: 3.6rem;
+  height: 3.6rem;
+  background: #fff;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.modal .box .left-container {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  max-width: 19.1rem;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+}
+.modal .box .left-container .icon {
+  position: absolute;
+  top: 2rem;
+  right: 2rem;
+  width: 3.4rem;
+  height: 3.4rem;
+  background-color: #fff;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.modal .box .left-container .image {
+  position: absolute;
+  left: 1.8rem;
+  bottom: 16.1rem;
+  width: 19rem;
+}
+.modal .box .left-container .image img {
+  width: 100%;
+}
+.modal .box .right-container {
+  padding: 3.5rem 4.5rem 2.9rem 7.4rem;
+  width: 100%;
+}
+.modal .box .right-container .name {
+  display: flex;
+  align-items: flex-end;
+  margin-bottom: 8px;
+}
+.modal .box .right-container .name h2 {
+  color: #2f3133;
+  font-family: "Montserrat", sans-serif;
+  font-size: 2.8rem;
+  font-weight: 700;
+  letter-spacing: -0.28px;
+  margin-right: 8px;
+}
+.modal .box .right-container .name span {
+  color: #7a7d80;
+  font-family: "Montserrat", sans-serif;
+  font-size: 1.6rem;
+  font-weight: 400;
+  letter-spacing: -0.16px;
+  margin-bottom: 9px;
+}
+.modal .box .right-container .type {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 3.2rem;
+  align-items: center;
+  flex-wrap: wrap;
+  width: 100%;
+}
+.modal .box .right-container .info {
+  display: flex;
+  gap: 4.8rem;
+  margin-bottom: 3.2rem;
+}
+.modal .box .right-container .info li {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+.modal .box .right-container .info li span {
+  color: #7a7d80;
+  font-size: 1.3rem;
+  font-weight: 400;
+  letter-spacing: -0.13px;
+}
+.modal .box .right-container .info li strong {
+  color: #2f3133;
+  font-family: "Montserrat", sans-serif;
+  font-size: 1.4rem;
+  font-weight: 600;
+  letter-spacing: -0.14px;
+}
+.modal .box .right-container .weak {
+  margin-bottom: 3.2rem;
+}
+.modal .box .right-container .weak h4 {
+  color: #4d5053;
+  font-size: 1.3rem;
+  font-weight: 600;
+  letter-spacing: -0.13px;
+  margin-bottom: 1.6rem;
+}
+.modal .box .right-container .weak .weak-types {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  gap: 1rem;
+}
+.modal .box .right-container .stats h5 {
+  color: #4d5053;
+  font-size: 1.3rem;
+  font-weight: 600;
+  letter-spacing: -0.13px;
+  margin-bottom: 1.6rem;
+}
+.modal .box .right-container .stats .all .item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 2rem;
+}
+.modal .box .right-container .stats .all .item:not(:last-child) {
+  margin-bottom: 1.3rem;
+}
+.modal .box .right-container .stats .all .item span {
+  color: #7a7d80;
+  font-size: 1.2rem;
+  line-height: 1.5rem;
+  font-weight: 400;
+  display: block;
+  width: 80px;
+}
+.modal .box .right-container .stats .all .item .bar-status {
+  position: relative;
+  width: 100%;
+  max-width: 30.3rem;
+  height: 3px;
+  /*background-color: #eff3f6;*/
+  background-color: black;
+}
+.modal .box .right-container .stats .all .item .bar-status .bar {
+  position: absolute;
+  width: 89%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  z-index: 0;
+  background-color: #c20001;
+}
+.modal .box .right-container .stats .all .item .bar-status .separator {
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: flex;
+  width: 100%;
+}
+.modal .box .right-container .stats .all .item .bar-status .separator li {
+  width: 4px;
+  height: 3px;
+  background-color: #fff;
+}
+.modal .box .right-container .stats .all .item .bar-status .separator li:not(:first-child) {
+  margin-left: 5.4rem;
+}
+.modal[type-pokemon-modal=grass] .left-container {
+  background-image: url("../img/bg-types/grass.svg");
+}
+.modal[type-pokemon-modal=bug] .left-container {
+  background-image: url("../img/bg-types/bug.svg");
+}
+.modal[type-pokemon-modal=water] .left-container {
+  background-image: url("../img/bg-types/water.svg");
+}
+.modal[type-pokemon-modal=fire] .left-container {
+  background-image: url("../img/bg-types/fire.svg");
+}
+.modal[type-pokemon-modal=electric] .left-container {
+  background-image: url("../img/bg-types/electric.svg");
+}
+.modal[type-pokemon-modal=ghost] .left-container {
+  background-image: url("../img/bg-types/ghost.svg");
+}
+.modal[type-pokemon-modal=dragon] .left-container {
+  background-image: url("../img/bg-types/dragon.svg");
+}
+.modal[type-pokemon-modal=ice] .left-container {
+  background-image: url("../img/bg-types/ice.svg");
+}
+.modal[type-pokemon-modal=rock] .left-container {
+  background-image: url("../img/bg-types/rock.svg");
+}
+.modal[type-pokemon-modal=steel] .left-container {
+  background-image: url("../img/bg-types/steel.svg");
+}
+.modal[type-pokemon-modal=psychic] .left-container {
+  background-image: url("../img/bg-types/psychic.svg");
+}
+.modal[type-pokemon-modal=normal] .left-container {
+  background-image: url("../img/bg-types/normal.svg");
+}
+.modal[type-pokemon-modal=poison] .left-container {
+  background-image: url("../img/bg-types/poison.svg");
+}
+.modal[type-pokemon-modal=ground] .left-container {
+  background-image: url("../img/bg-types/ground.svg");
+}
+.modal[type-pokemon-modal=flying] .left-container {
+  background-image: url("../img/bg-types/flying.svg");
+}
+.modal[type-pokemon-modal=flaire] .left-container {
+  background-image: url("../img/bg-types/flaire.svg");
+}
+.modal[type-pokemon-modal=dark] .left-container {
+  background-image: url("../img/bg-types/dark.svg");
+}
+.modal[type-pokemon-modal=fighting] .left-container {
+  background-image: url("../img/bg-types/fighting.svg");
+}
+
+.open-modal .modal {
+  opacity: 1;
+  pointer-events: all;
+}
+.open-modal .modal .box {
+  transform: translateY(0);
+}
+
+h1,
+h2,
+h3 {
+  font-family: "Montserrat", sans-serif;
+  line-height: 150%;
+}
+
+h1,
+h2 {
+  font-weight: 700;
+  letter-spacing: -0.01rem;
+}
+
+h2,
+h3 {
+  color: #2f3133;
+}
+
+h1 {
+  font-size: 6.4rem;
+  color: #fff;
+}
+
+h2 {
+  font-size: 3.2rem;
+}
+
+h3 {
+  font-weight: 600;
+  font-size: 1.8rem;
+}
+
+header {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 11.2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+header .container {
+  width: 108rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+header .container p {
+  color: #fff;
+  font-size: 13px;
+  font-weight: 400;
+}
+
+/*# sourceMappingURL=style.css.map */

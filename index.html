@@ -1,10 +1,11 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 
 <head>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="./css/style.css">
@@ -12,53 +13,49 @@
 </head>
 
 <body>
-
-  <h1>Qual é esse Pokémon?</h1>
-
-  <h2>Selecione seu Pokémon</h2>
-
-  <h3>Froakie</h3>
-
-  <div class="tag blue-tag">
-    <div class="icon">
-      <img src="./img/bag-red.svg" alt="">
+  <header>
+    <div class="container">
+      <a href="">
+        <img src="./img/logo.svg" alt="logo" class="logo">
+      </a>
+      <p>Case Study -> <strong>CodeBoost</strong></p>
     </div>
-    <span>pokedex</span>
-  </div>
-
-  <div class="search">
-    <input type="text" placeholder="Busque pelo nome ou ID">
-    <button type="button">
-      <img src="./img/icon-search.svg" alt="">
-    </button>
-  </div>
-
-  <div class="type-filter grass">
-    <div class="icon">
-      <img src="./img/icon-types/grass.svg" alt="">
-    </div>
-    <span>Grass</span>
-  </div>
-
-  <button class="card-pokemon grass">
-    <div class="image">
-      <img src="./img/Bulbasaur.svg" alt="">
-    </div>
-    <div class="info">
-      <div class="text">
-        <span>#001</span>
-        <h3>Bulbasaur</h3>
+  </header>
+  <section class="s-area-slide-hero">
+    <div class="slide-hero">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide">
+          <div class="main-area">
+            <div class="container">
+              <div class="text">
+                <div class="tag">
+                  <div class="icon">
+                    <img src="./img/bag-red.svg" alt="">
+                  </div>
+                  <span>pokedex</span>
+                </div>
+                <h1>Qual é esse Pokémon?</h1>
+                <p>O guia perfeito para aqueles que querem caçar Pokémon ao redor do mundo</p>
+                <div class="image">
+                  <img class="lighting" src="./img/lighting.svg" alt="">
+                  <img src="./img/pokeball-red.png" alt="">
+                </div>
+              </div>
+              <div class="area-explore">
+                <div class="txt">
+                  <div class="icon">
+                    <img src="./img/arrow-down-white.svg" alt="">
+                  </div>
+                  <span>explore</span>
+                </div>
+                <div class="swiper-pagination"></div>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
-      <div class="icon">
-        <img src="./img/icon-types/grass.svg" alt="">
-      </div>
     </div>
-  </button>
-
-  <span class="tag-type grass">Grass</span>
-
-  <button class="load-more">Carregar mais Pokémon</button>
-
+  </section>
   <footer class="footer">
     <div class="footer-conteiner">
       <div class="text">
@@ -68,138 +65,7 @@
       <img src="./img/codeboost.svg" alt="">
     </div>
   </footer>
-
-  <div class="modal" type-pokemon-modal="grass">
-    <div class="overlay"></div>
-    <div class="box">
-      <button class="close">
-        <img src="./img/close.svg" alt="">
-      </button>
-      <div class="left-container">
-        <div class="icon">
-          <img src="./img/icon-types/grass.svg" alt="">
-        </div>
-        <div class="image">
-          <img src="./img/Bulbasaur.svg" alt="">
-        </div>
-      </div>
-      <div class="right-container">
-        <div class="name">
-          <h2>Bulbasaur</h2>
-          <span>#001</span>
-        </div>
-        <ul class="type">
-          <li>
-            <span class="tag-type grass">Grass</span>
-          </li>
-          <li>
-            <span class="tag-type poison">Poison</span>
-          </li>
-        </ul>
-        <ul class="info">
-          <li>
-            <span>Height</span>
-            <strong>0.7m</strong>
-          </li>
-          <li>
-            <span>Weight</span>
-            <strong>6.9kg</strong>
-          </li>
-          <li>
-            <span>Abilities</span>
-            <strong>Ovegrow</strong>
-          </li>
-        </ul>
-        <div class="weak">
-          <h4>Weaknesses</h4>
-          <div class="weak-types">
-            <span class="tag-type fire">Fire</span>
-            <span class="tag-type psychic">Psychic</span>
-            <span class="tag-type flying">Flying</span>
-            <span class="tag-type ice">Ice</span>
-          </div>
-        </div>
-        <div class="stats">
-          <h5>Status</h5>
-          <div class="all">
-            <div class="item">
-              <span>HP</span>
-              <div class="bar-status">
-                <div class="bar"></div>
-                <ul class="separator">
-                  <li></li>
-                  <li></li>
-                  <li></li>
-                  <li></li>
-                </ul>
-              </div>
-            </div>
-            <div class="item">
-              <span>Attack</span>
-              <div class="bar-status">
-                <div class="bar"></div>
-                <ul class="separator">
-                  <li></li>
-                  <li></li>
-                  <li></li>
-                  <li></li>
-                </ul>
-              </div>
-            </div>
-            <div class="item">
-              <span>Defense</span>
-              <div class="bar-status">
-                <div class="bar"></div>
-                <ul class="separator">
-                  <li></li>
-                  <li></li>
-                  <li></li>
-                  <li></li>
-                </ul>
-              </div>
-            </div>
-            <div class="item">
-              <span>Sp. attack</span>
-              <div class="bar-status">
-                <div class="bar"></div>
-                <ul class="separator">
-                  <li></li>
-                  <li></li>
-                  <li></li>
-                  <li></li>
-                </ul>
-              </div>
-            </div>
-            <div class="item">
-              <span>Sp. defense</span>
-              <div class="bar-status">
-                <div class="bar"></div>
-                <ul class="separator">
-                  <li></li>
-                  <li></li>
-                  <li></li>
-                  <li></li>
-                </ul>
-              </div>
-            </div>
-            <div class="item">
-              <span>Speed</span>
-              <div class="bar-status">
-                <div class="bar"></div>
-                <ul class="separator">
-                  <li></li>
-                  <li></li>
-                  <li></li>
-                  <li></li>
-                </ul>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
   <script type="module" src="./js/index.js"></script>
 </body>
 
