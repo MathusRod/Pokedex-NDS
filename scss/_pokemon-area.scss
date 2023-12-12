@@ -1,0 +1,40 @@
+.pokemon-area {
+  margin: 0 15%;
+  display: flex;
+  .pokemon-type {
+    height: 80.8rem;
+    padding: 7.1rem 20rem 0 0;
+    border-right: 1px solid rgba(0, 0, 0, 0.2);
+    .type-filter {
+      margin-bottom: 1.2rem;
+    }
+  }
+  .show-pokemon {
+    width: 100%;
+    padding-top: 7.1rem;
+    padding-left: 7.5rem;
+
+    .txt {
+      display: flex;
+      gap: 1.8rem;
+      margin-bottom: 6.3rem;
+      p {
+        color: #4d5053;
+        font-family: Montserrat;
+        font-size: 18px;
+        font-weight: 600;
+        line-height: 150%;
+      }
+    }
+    .all-pokemon {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 4rem;
+      margin-bottom: 6.8rem;
+    }
+
+    .load-more {
+      margin: 0 37% 8.8rem 37%;
+    }
+  }
+}

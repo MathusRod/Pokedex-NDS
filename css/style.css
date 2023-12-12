@@ -9,10 +9,6 @@ html {
   font-size: 62.5%;
 }
 
-body {
-  background-color: grey;
-}
-
 button {
   cursor: pointer;
   border: 0;
@@ -36,7 +32,13 @@ ul {
   list-style: none;
 }
 
-.tag {
+.swiper-slide.blue .tag .icon {
+  background-color: rgba(63, 104, 186, 0.5);
+}
+.swiper-slide.blue .tag span {
+  color: #3f67ba;
+}
+.swiper-slide .tag {
   display: flex;
   align-items: center;
   background-color: #fff;
@@ -44,23 +46,18 @@ ul {
   max-width: 12.1rem;
   padding: 0.375rem 0.25rem;
 }
-.tag.blue-tag .icon {
-  background-color: rgba(63, 104, 186, 0.15);
-}
-.tag.blue-tag span {
-  color: #3f67ba;
-}
-.tag .icon {
-  width: 1.625rem;
-  height: 1.625rem;
-  background: rgba(194, 0, 0, 0.12);
+.swiper-slide .tag .icon {
+  width: 2.5rem;
+  height: 2.5rem;
+  background: rgba(194, 0, 0, 0.5);
   border-radius: 50%;
   display: flex;
   align-items: center;
   justify-content: center;
-  margin-right: 0.5rem;
+  margin-left: 0.5rem;
+  margin-right: 1rem;
 }
-.tag span {
+.swiper-slide .tag span {
   font-weight: 600;
   font-size: 1.5rem;
   line-height: 150%;
@@ -129,6 +126,9 @@ ul {
   font-size: 1.5rem;
   line-height: 150%;
 }
+.type-filter.all span {
+  color: red;
+}
 .type-filter.water span {
   color: #4f77be;
 }
@@ -192,7 +192,7 @@ ul {
   max-width: 25rem;
   height: 25.4rem;
   border-radius: 12px;
-  background: #f3f0f0;
+  background: #fff;
   box-shadow: 0px 10px 51px -5px rgba(183, 189, 193, 0.5);
   transition: all 0.3s;
 }
@@ -401,8 +401,8 @@ ul {
   background-color: rgb(63, 93, 179);
 }
 .footer .footer-conteiner {
-  width: 1080px;
-  margin: 0 auto;
+  width: 100%;
+  padding: 0 15%;
   display: flex;
   justify-content: space-between;
 }
@@ -506,18 +506,18 @@ ul {
   display: flex;
   align-items: flex-end;
   margin-bottom: 8px;
+  font-family: "Montserrat", sans-serif;
 }
 .modal .box .right-container .name h2 {
+  width: auto;
   color: #2f3133;
-  font-family: "Montserrat", sans-serif;
   font-size: 2.8rem;
   font-weight: 700;
   letter-spacing: -0.28px;
-  margin-right: 8px;
+  margin-right: 0.8rem;
 }
 .modal .box .right-container .name span {
   color: #7a7d80;
-  font-family: "Montserrat", sans-serif;
   font-size: 1.6rem;
   font-weight: 400;
   letter-spacing: -0.16px;
@@ -604,7 +604,7 @@ ul {
 }
 .modal .box .right-container .stats .all .item .bar-status .bar {
   position: absolute;
-  width: 89%;
+  width: 67%;
   height: 100%;
   top: 0;
   left: 0;
@@ -714,6 +714,7 @@ h1 {
 
 h2 {
   font-size: 3.2rem;
+  width: 280px;
 }
 
 h3 {
@@ -727,12 +728,14 @@ header {
   left: 0;
   width: 100%;
   height: 11.2rem;
+  z-index: 300;
   display: flex;
   align-items: center;
   justify-content: center;
 }
 header .container {
-  width: 108rem;
+  padding: 0 15%;
+  width: 100%;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -741,6 +744,196 @@ header .container p {
   color: #fff;
   font-size: 13px;
   font-weight: 400;
+}
+
+.s-area-slide-hero {
+  position: relative;
+  width: 100%;
+  height: 99.4rem;
+}
+.s-area-slide-hero .slide-hero {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+.s-area-slide-hero .slide-hero .swiper-slide.blue .main-area {
+  background: url("../img/bg-blue.svg") no-repeat center center;
+  width: 100%;
+  height: 70.6rem;
+  background-size: cover;
+}
+.s-area-slide-hero .slide-hero .swiper-slide.blue .main-area .container .text .image .ball {
+  position: absolute;
+  left: 6.5%;
+  top: -40px;
+}
+.s-area-slide-hero .slide-hero .swiper-slide.blue .main-area .container .area-explore .txt .icon {
+  background: rgba(175, 192, 227, 0.5);
+}
+.s-area-slide-hero .slide-hero .swiper-slide.blue .main-area .container .area-explore .swiper-pagination .input-ball:first-child {
+  opacity: 0.5;
+}
+.s-area-slide-hero .slide-hero .swiper-slide.blue .main-area .container .area-explore .swiper-pagination .input-ball:last-child {
+  opacity: 1;
+}
+.s-area-slide-hero .slide-hero .swiper-slide:after {
+  content: "";
+  width: 100%;
+  height: 28.8rem;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  background-color: #eff3f6;
+  z-index: 0;
+  pointer-events: none;
+}
+.s-area-slide-hero .slide-hero .swiper-slide .main-area {
+  position: relative;
+  background: url("../img/bg-red.svg") no-repeat center center;
+  width: 100%;
+  height: 70.6rem;
+  background-size: cover;
+  padding-top: 13.3rem;
+}
+.s-area-slide-hero .slide-hero .swiper-slide .main-area .container {
+  position: relative;
+  height: 100%;
+}
+.s-area-slide-hero .slide-hero .swiper-slide .main-area .container .text .tag {
+  margin: 0 auto;
+}
+.s-area-slide-hero .slide-hero .swiper-slide .main-area .container .text h1 {
+  text-align: center;
+  margin-top: 2.9rem;
+  margin-bottom: 8px;
+}
+.s-area-slide-hero .slide-hero .swiper-slide .main-area .container .text p {
+  text-align: center;
+  color: #fff;
+  font-size: 1.8rem;
+  font-weight: 500;
+}
+.s-area-slide-hero .slide-hero .swiper-slide .main-area .container .text p lin .image {
+  margin-top: 10.5rem;
+  margin-left: 19.2rem;
+}
+.s-area-slide-hero .slide-hero .swiper-slide .main-area .container .text .image {
+  position: relative;
+  z-index: 1;
+  width: 100%;
+  margin: 0 auto;
+  margin-top: 12.2rem;
+  max-width: 79.8rem;
+}
+.s-area-slide-hero .slide-hero .swiper-slide .main-area .container .text .image .lights {
+  position: absolute;
+  left: 50%;
+  margin-left: -7.3rem;
+  top: -30px;
+}
+.s-area-slide-hero .slide-hero .swiper-slide .main-area .container .text .image .ball {
+  position: absolute;
+  left: 5.4%;
+  top: 20px;
+}
+.s-area-slide-hero .slide-hero .swiper-slide .main-area .container .area-explore {
+  position: relative;
+  bottom: 8rem;
+  left: 0;
+  width: 100%;
+  margin: 0 15%;
+  bottom: -90px;
+  z-index: 10;
+}
+.s-area-slide-hero .slide-hero .swiper-slide .main-area .container .area-explore .txt {
+  position: absolute;
+}
+.s-area-slide-hero .slide-hero .swiper-slide .main-area .container .area-explore .txt p {
+  position: absolute;
+  left: -3px;
+  color: #fff;
+  font-size: 13px;
+  font-weight: 500;
+  line-height: 150%;
+  transform: rotate(-90deg);
+}
+.s-area-slide-hero .slide-hero .swiper-slide .main-area .container .area-explore .txt .icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 80px;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background: rgb(201, 12, 12);
+}
+.s-area-slide-hero .slide-hero .swiper-slide .main-area .container .area-explore .txt .icon:hover {
+  transform: scale(1.07);
+}
+.s-area-slide-hero .slide-hero .swiper-slide .main-area .container .area-explore .swiper-pagination {
+  position: absolute;
+  right: 30%;
+  top: 90px;
+  display: flex;
+  gap: 10px;
+}
+.s-area-slide-hero .slide-hero .swiper-slide .main-area .container .area-explore .swiper-pagination .input-ball {
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background-color: #fff;
+}
+.s-area-slide-hero .slide-hero .swiper-slide .main-area .container .area-explore .swiper-pagination .input-ball:last-child {
+  opacity: 0.5;
+}
+
+.search-pokemon {
+  top: 930px;
+  z-index: 400;
+  position: absolute;
+  width: 100%;
+  padding: 0 15%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.pokemon-area {
+  margin: 0 15%;
+  display: flex;
+}
+.pokemon-area .pokemon-type {
+  height: 80.8rem;
+  padding: 7.1rem 20rem 0 0;
+  border-right: 1px solid rgba(0, 0, 0, 0.2);
+}
+.pokemon-area .pokemon-type .type-filter {
+  margin-bottom: 1.2rem;
+}
+.pokemon-area .show-pokemon {
+  width: 100%;
+  padding-top: 7.1rem;
+  padding-left: 7.5rem;
+}
+.pokemon-area .show-pokemon .txt {
+  display: flex;
+  gap: 1.8rem;
+  margin-bottom: 6.3rem;
+}
+.pokemon-area .show-pokemon .txt p {
+  color: #4d5053;
+  font-family: Montserrat;
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 150%;
+}
+.pokemon-area .show-pokemon .all-pokemon {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 4rem;
+  margin-bottom: 6.8rem;
+}
+.pokemon-area .show-pokemon .load-more {
+  margin: 0 37% 8.8rem 37%;
 }
 
 /*# sourceMappingURL=style.css.map */
