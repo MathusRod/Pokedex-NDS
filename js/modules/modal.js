@@ -1,5 +1,7 @@
+
 export default function initModal(){
-  const cardPokemon = document.querySelectorAll(".js-open-details-pokemon");
+
+  const cardPokemon = document.querySelectorAll(".card-pokemon");
   const btnCloseModal = document.querySelector(".js-close-datails-pokemon");
   const overlay = document.querySelector(".overlay")
 
@@ -22,4 +24,6 @@ export default function initModal(){
   btnCloseModal.addEventListener("click", closeDetailsPokemon);
 
   overlay.addEventListener("click", outSideModal)
+
+  
 }

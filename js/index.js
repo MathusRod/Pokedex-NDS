@@ -1,4 +1,6 @@
 import initSwiper from "./modules/swiper.js"
-import initModal from "./modules/modal.js";
-initModal();
-initSwiper()
+import initTypes from "./modules/types.js";
+import initCards from "./modules/cards.js";
+initSwiper();
+initTypes();
+initCards();
