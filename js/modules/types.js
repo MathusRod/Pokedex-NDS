@@ -29,6 +29,10 @@ export default function initTypes() {
   const pokeArea = document.querySelector(".all-pokemon");
   const pokeCount = document.getElementById("count");
   const btnLoadMore = document.querySelector(".load-more");
+  const typeAll = document.querySelector(".all");
+  typeAll.addEventListener("click", ()=>{
+    window.location.reload(true);
+  })
   async function filterByTypes() {
     const idPokemon = this.getAttribute("code-type");
     const fetchResponse = await fetch(
@@ -36,6 +40,7 @@ export default function initTypes() {
     );
     const response = await fetchResponse.json();
     const { pokemon } = response;
+    
     pokeArea.innerHTML = "";
     btnLoadMore.style = "display:none;";
     pokeCount.innerText = `${pokemon.length} pokémon`;

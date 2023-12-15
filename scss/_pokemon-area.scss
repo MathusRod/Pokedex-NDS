@@ -2,15 +2,18 @@
   margin: 0 15%;
   display: flex;
   .pokemon-type {
-    height: 90.8rem;
-    padding: 7.1rem 18rem 0 0;
-    border-right: 1px solid rgba(0, 0, 0, 0.2);
-    .type-filter {
-      margin-bottom: 1.2rem;
-      span{
-        text-transform: capitalize;
+      height: 90.8rem;
+      padding: 7.1rem 18rem 0 0;
+      border-right: 1px solid rgba(0, 0, 0, 0.2);
+      .type-filter {
+        margin-bottom: 1.2rem;
+        span{
+          text-transform: capitalize;
+        }
       }
-    }
+  }
+  .select-custom{
+    display: none;
   }
   .show-pokemon {
     width: 100%;

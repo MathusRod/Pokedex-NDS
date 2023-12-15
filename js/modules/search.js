@@ -1,5 +1,6 @@
 import getPokemon from "./cards.js";
 import initModal from "./modal.js";
+import offset from "./cards.js";
 export default function initSearch() {
   const btnSearch = document.getElementById("js-btn-search");
   const inputSearch = document.getElementById("js-input-search");
@@ -64,8 +65,7 @@ export default function initSearch() {
       btnLoadMore.style = "display:none;";
       pokemonCount.innerText = "1 Pokemon";
     } else {
-      getPokemon();
-      btnLoadMore.style = "display:block;";
+      window.location.reload(true);
     }
     inputValue = "";
   }

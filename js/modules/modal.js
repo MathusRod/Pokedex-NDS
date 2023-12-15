@@ -81,17 +81,13 @@ export default function initModal() {
             <strong>${weight / 10}kg</strong>
           </li>
           <li>
-            <span>Abilities</span>
+            <span>Habilidade</span>
             <strong>${abilities[0].ability.name}</strong>
           </li>
         </ul>
         <div class="weak">
-          <h4>Weaknesses</h4>
+          <h4>Fraquezas</h4>
           <div class="weak-types">
-            <span class="tag-type fire">Fire</span>
-            <span class="tag-type psychic">Psychic</span>
-            <span class="tag-type flying">Flying</span>
-            <span class="tag-type ice">Ice</span>
           </div>
         </div>
         <div class="stats">
@@ -111,7 +107,7 @@ export default function initModal() {
               </div>
             </div>
             <div class="item">
-              <span>Attack [${stats[1].base_stat}]</span>
+              <span>Ataque [${stats[1].base_stat}]</span>
               <div class="bar-status attack">
                 <div class="bar"></div>
                 <ul class="separator">
@@ -124,7 +120,7 @@ export default function initModal() {
               </div>
             </div>
             <div class="item">
-              <span>Defense [${stats[2].base_stat}]</span>
+              <span>Defesa[${stats[2].base_stat}]</span>
               <div class="bar-status defense">
                 <div class="bar"></div>
                 <ul class="separator">
@@ -137,7 +133,7 @@ export default function initModal() {
               </div>
             </div>
             <div class="item">
-              <span>Sp. attack [${stats[3].base_stat}]</span>
+              <span>Sp. ataque [${stats[3].base_stat}]</span>
               <div class="bar-status sp-attack">
                 <div class="bar"></div>
                 <ul class="separator">
@@ -150,7 +146,7 @@ export default function initModal() {
               </div>
             </div>
             <div class="item">
-              <span>Sp. defense [${stats[4].base_stat}]</span>
+              <span>Sp. defesa [${stats[4].base_stat}]</span>
               <div class="bar-status sp-defense">
                 <div class="bar"></div>
                 <ul class="separator">
@@ -163,7 +159,7 @@ export default function initModal() {
               </div>
             </div>
             <div class="item">
-              <span>Speed [${stats[5].base_stat}]</span>
+              <span>Velocidade [${stats[5].base_stat}]</span>
               <div class="bar-status speed">
                 <div class="bar"></div>
                 <ul class="separator">
