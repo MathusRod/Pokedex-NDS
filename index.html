@@ -5,6 +5,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="shortcut icon" href="./favicon_io/favicon-16x16.png" type="image/x-icon">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -105,7 +106,7 @@
 
   <section class="pokemon-area" >
     <div class="pokemon-type desktop">
-      <div class="type-filter all">
+      <div class="type-filter all active">
         <div class="icon">
           <img src="./img/icon-pokeball.svg" alt="">
         </div>
@@ -113,20 +114,18 @@
       </div>
     </div>
     <div class="select-custom">
-      <button class="item-selected">
+      <button class="item-selected js-open-select-custom">
         <span>Mostrar:</span>
         <strong>Todos</strong>
       </button>
-      <ul class="dropdown-select">
-        <li>
-          <div class="type-filter all">
+      <div class="dropdown-select">
+          <div class="type-filter all active">
             <div class="icon">
               <img src="./img/icon-pokeball.svg" alt="">
             </div>
             <span>todos</span>
           </div>
-        </li>
-      </ul>
+        </div>
     </div>
     <div class="show-pokemon">
       <div class="txt">

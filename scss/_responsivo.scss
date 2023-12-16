@@ -9,20 +9,24 @@
   }
   header {
     .container {
-      padding: 0 5%;
+      padding: 0;
+      justify-content: center;
+      p {
+        display: none;
+      }
     }
   }
   .s-area-slide-hero {
     .slide-hero {
       .swiper-slide {
-        &.blue{
+        &.blue {
           .main-area {
             .container {
               .text {
                 .image {
                   .ball {
                     position: absolute;
-                    left: .8%;
+                    left: 0.8%;
                     top: -15px;
                   }
                 }
@@ -34,7 +38,9 @@
           .container {
             .text {
               p {
+                width: 360px;
                 font-size: 1.4rem;
+                margin: 0 auto;
               }
               .image {
                 margin-top: 14.5rem;
@@ -60,9 +66,16 @@
   }
   .footer {
     .footer-conteiner {
+      flex-direction: column;
+      justify-content: center;
       padding: 0 5%;
       .text {
-        margin: 6.7rem 11.2rem 6.5rem 0;
+        text-align: center;
+        margin: 3.7rem auto;
+      }
+      img{
+        width: 360px;
+        margin: 0 auto 2rem auto;
       }
     }
   }
@@ -71,8 +84,70 @@
     .pokemon-type {
       display: none;
     }
-    .select-custom{
+    .select-custom {
       display: block;
+      position: relative;
+      margin-bottom: 2.5rem;
+      &.active{
+        .dropdown-select{
+          opacity: 1;
+          pointer-events: all;
+        }
+      }
+      .item-selected{
+        cursor: pointer;
+        width: 100%;
+        border: 1px solid #a0afba;
+        background: url("../img/arrow-down-select.svg") no-repeat right 2.4rem center;
+        padding:2rem;
+        border-radius: 1rem;
+        display: flex;
+        align-items: center;
+        span{
+          color:#7a7d80;
+          opacity: .6;
+          font-size: 1.4rem;
+          margin-right: 4px;
+        }
+        strong{
+          color:#7a7d80;
+          font-size: 1.4rem;
+          font-weight: 600;
+          text-transform: capitalize;
+        }
+      }
+      .dropdown-select{
+        position: absolute;
+        top:5rem;
+        z-index: 2;
+        width: 100%;
+        height: 22.3rem;
+        border: 1px solid #a0afba;
+        background-color: #fff;
+        border-top: 0;
+        padding: 2.1rem;
+        overflow-y: auto;
+        opacity: 0;
+        pointer-events: none;
+        transition: all .3s;
+        &::-webkit-scrollbar-track{
+          background-color: transparent;
+        }
+        &::-webkit-scrollbar{
+          width: 5px;
+          background-color: transparent;
+        }
+        &::-webkit-scrollbar-thumb{
+          background-color: #3d75c2;
+          border-radius: 5px;
+        }
+        .type-filter{
+          &:first-child{
+            padding-top: 0;
+          }
+          padding: 1.2rem;
+        }
+      }
     }
     .show-pokemon {
       width: 300px;
@@ -80,11 +155,11 @@
       margin: 0 auto;
       .txt {
         flex-direction: column;
-        img{
+        img {
           margin: 0 auto;
           width: 2.6rem;
         }
-        p{
+        p {
           text-align: center;
         }
         margin-bottom: 4rem;
@@ -94,7 +169,93 @@
         justify-content: center;
       }
       .load-more {
-        margin: 0 5% 8.8rem 5%;
+        margin: 0 auto 4.8rem auto;
+        display: flex;
+      }
+    }
+  }
+  .modal {
+    align-items: flex-end;
+    .box {
+      width: 100%;
+      height: 90%;
+      flex-direction: column;
+      .close {
+        top: -4.5rem;
+        border-radius: 8px 8px 0 0;
+        width: 5rem;
+        height: 5rem;
+      }
+      .left-container {
+        max-width: 100%;
+        height: 12.5rem;
+        .image {
+          left: 50%;
+          bottom: -3.5rem;
+          width: 13rem;
+          margin-left: -6rem;
+          img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+          }
+        }
+      }
+      .right-container {
+        padding: 2.5rem auto 3.5rem auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        .name {
+          justify-content: center;
+          h2 {
+            font-size: 3.5rem;
+          }
+          span {
+            font-size: 2.2rem;
+            margin-bottom: 13px;
+          }
+        }
+        .type{
+          justify-content: center;
+        }
+        .info{
+          justify-content: center;
+          li{
+            span{
+              font-size: 1.5rem;
+            }
+            strong{
+              font-size: 1.7rem;
+            }
+          }
+        }
+        .weak{
+          h4{
+            text-align: center;
+            font-size: 1.5rem;
+          }
+          .weak-types{
+            justify-content: center;
+          }
+        }
+        .stats{
+          h5{
+            text-align: center;
+            font-size: 1.5rem;
+          }
+          .all {
+            .item {
+              flex-direction: column;
+              justify-content: center;
+              span{
+                width: 300px;
+                text-align: center;
+                font-size: 1.4rem;
+              }
+            }
+          }
+        }
       }
     }
   }
